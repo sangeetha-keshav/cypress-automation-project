@@ -4,17 +4,13 @@ pipeline{
         stage('build') {
             steps {
                 echo 'building project'
-                node {
-                    sh 'npm ci'
-                }
+                sh 'npm ci'
             }
         }
         stage('cypress test') {
             steps {
                 echo 'running cypress automation test'
-                node {
-                    sh 'npx cypress run'
-                }
+                sh 'npx cypress run'
             }
         }
     }
