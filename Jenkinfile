@@ -4,10 +4,10 @@ pipeline{
         stage('build and cypress test') {
             steps {
                 echo 'npm install and running cypress automation test'
-                sh '
+                sh '''
                     npm install
                     npx cypress run
-                '
+                '''
             }
         }
     }
