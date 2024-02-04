@@ -1,0 +1,32 @@
+{
+  "name": "cypress-automation-project",
+  "version": "1.0.0",
+  "description": "cypress automation practice project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sangeetha-keshav/cypress-automation-project.git"
+  },
+  "author": "Sangeetha Keshav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sangeetha-keshav/cypress-automation-project/issues"
+  },
+  "homepage": "https://github.com/sangeetha-keshav/cypress-automation-project#readme",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "cypress": "^13.6.4",
+    "multiple-cucumber-html-reporter": "^3.6.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/integration/**/*.js",
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/cucumber-report/cucumber-report.json"
+    }
+  }
+}
