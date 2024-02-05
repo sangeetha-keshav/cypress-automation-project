@@ -15,7 +15,7 @@ module.exports = defineConfig({
     projectId: "514gd2",
     specPattern: "**/*.feature",
     setupNodeEvents,
-    video: true,
+    video: false,
     videosFolder: 'cypress/reports/videos',
     screenshotsFolder: 'cypress/reports/screenshots',
     includeShadowDom: false // when we have to traverse through shadow element we need to set this to true, then manually traversing is not needed. It's used for reusable component.
