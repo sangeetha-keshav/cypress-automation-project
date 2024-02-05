@@ -13,7 +13,7 @@ async function setupNodeEvents(on, config) {
 module.exports = defineConfig({
   e2e: {
     projectId: "514gd2",
-    specPattern: "**/*.feature",
+    specPattern: "cypress/integration/cucumber/features/*.feature",
     setupNodeEvents,
     video: false,
     videosFolder: 'cypress/reports/videos',
