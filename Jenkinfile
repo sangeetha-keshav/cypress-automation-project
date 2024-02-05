@@ -1,16 +1,13 @@
 pipeline{
     agent any
     stages {
-        stage('build') {
+        stage('build and cypress test') {
             steps {
-                echo 'building project'
-                sh 'npm install'
-            }
-        }
-        stage('cypress test') {
-            steps {
-                echo 'running cypress automation test'
-                sh 'npx cypress run'
+                echo 'npm install and running cypress automation test'
+                sh '''
+                    npm install
+                    npx cypress run
+                '''
             }
         }
     }
